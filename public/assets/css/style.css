@@ -2,6 +2,11 @@ thead {
     font-weight: bold;
 }
 
+.corCompraeVenda {
+    background-color: #637b85;
+    color: #fff;
+}
+
 tbody tr:nth-child(odd) {
     background-color: #EEE;
 }
@@ -16,6 +21,14 @@ tr:hover {
 
 h2 {
     color: #637b85;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.bordadebaixo {
+    border-bottom: 1px double #637b85;
 }
 
 

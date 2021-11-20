@@ -44,7 +44,9 @@
     </nav>
     <section class="jumbotron text-center corPrimaria">
         <div class="container">
-            <img class="foto-radar" src="imagens/radar.png" alt="">
+            <img class="foto-radar" src="imagens/radarazul.png" alt="">
+            
+        
             <h1 class="jumbotron-heading textoBranco">RADAR INVESTIMENTOS</h1>
             <p class="lead textoBranco"> GESTÃO DA TECNOLOGIA DA INFORMAÇÃO - HTML,CSS,JS,PHP </p>
             <p>
@@ -65,8 +67,14 @@
                     <div class="card mb-4 box-shadow">
                         <table class="table">
                             <thead>
+                            <tr>
+                                <td colspan="4" class="corCompraeVenda centralizar">COMPRA</td>
+                                
+                        
+                            </tr>
+
                                 <tr>
-                                        <td>Ativo</td>
+                                        <td>Empresa</td>
                                         <td>P/L</td>
                                         <td>Marg.liq</td>
                                         <td>Div</td>
@@ -91,18 +99,34 @@
                 <div class="card mb-4 box-shadow">
                         <table class="table">
                             <thead>
-                                <tr>
-                                        <td>Ativo</td>
+                           
+                         
+                            <tr>
+                                <td colspan="4" class="corCompraeVenda centralizar" >VENDA</td>
+                                
+                        
+                            </tr>
+
+                          
+                            
+                            
+                            <tr>
+                                        
+                                        <td>Empresa</td>
                                         <td>P/L</td>
                                         <td>Marg.liq</td>
                                         <td>Div</td>
                                        
-                    
+                
                                 </tr>
+                            <tr>
+
                             </thead>
                             <tbody>
                                 <?php foreach (json_decode(file_get_contents("http://localhost:3002/"))->ativos as $ativo): ?>
+                                    
                                     <tr>
+                                    
                                         <td><?= $ativo->Empresa; ?></td>
                                         <td><?= $ativo->{'P/L'};//quando tiver / e etc chaves e aspas simples ?></td> 
                                         <td><?= $ativo->{'Marg. Líquida'}; ?></td>
@@ -118,7 +142,7 @@
     </div>
     <!-- SOBRE O PROJETO -->
     <section class="jumbotron text-center corPrimaria" id="sobre-projeto">
-        <div class="container">
+    <div class="container">
             <h2 class="jumbotron-heading titulosBrancos">
                 Sobre o Projeto
             </h2>
