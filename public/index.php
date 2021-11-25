@@ -42,14 +42,13 @@
             </ul>
         </div>
     </nav>
-    <section class="jumbotron text-center corPrimaria">
+    <section class=" text-center">
         <div class="container">
             <img class="foto-radar" src="imagens/radarazul.png" alt="">
             
         
             <h1 class="jumbotron-heading textoBranco">RADAR INVESTIMENTOS</h1>
-            <p class="lead textoBranco"> GESTÃO DA TECNOLOGIA DA INFORMAÇÃO - HTML,CSS,JS,PHP </p>
-            <p>
+                        <p class=" text-center">
                 <a href="#contato" class="btn btn-dark my-2">Contato</a>
             </p>
             <a href="https://www.google.com.br/webhp?tab=ww" target="_blank"><i
@@ -141,17 +140,39 @@
         </div>
     </div>
     <!-- SOBRE O PROJETO -->
-    <section class="jumbotron text-center corPrimaria" id="sobre-projeto">
+    <section class="text-center jumbotron corPrimaria" id="sobre-projeto">
+    
+ 
+</div>
     <div class="container">
             <h2 class="jumbotron-heading titulosBrancos">
                 Sobre o Projeto
             </h2>
-            <p class="lead textoBranco">
-                A equipe sempre pensou fora da caixa com isso um de nossos fundadores estava navegando em um mercado de investimentos digital e acabou percebendo que seria legal um "radar" para usuários sem conhecimento nenhum.
-                <br> Então nós da equipe radar-X iremos solucionar esse problema.
-            </p>
+            <p class="lead textoBranco"></p>
+            <p>Em um universo cada vez mais descentralizado, o fato de pequenos investidores ocuparem uma fatia cada vez maior do mercado financeiro tem sido um marco no sociedade brasileira. Produtos que antes apenas grandes investidores tinham acesso, hoje são explorados por pessoas de todas as faixas sociais.</p>
+            <p>Um grande divisor de águas no sistema financeiro brasileiro foi o surgimento de pequenas corporações como bancos digitais e fintechs possibilitando serviços financeiros de baixo custo ou até sem custos para seus clientes. Isto trouxe à tona um grande interesse da população em investimentos.</p>
+            <p>As maiores barreiras para o pequeno investidor iniciante são a falta de assistências já que é um serviço relativamente caro ao pequeno investidor, e falta de tempo para analisar as melhores opções do momento, já que na maioria das vezes esse investidor depende de outra(s) atividade(s) para gerar suas principais receitas.</p>
+            <p>No universo da tecnologia já vivemos um cenário parecido, quando grandes corporações dominavam a tecnologia e a comercializava a um custo altíssimo. Neste cenário nasceram os softwares livres, trazendo acessibilidade à todos, e ainda surgiram os programas de código aberto ou compartilhado, o que acelerou em um nível exponencial a qualidade dos softwares gratuitos.</p>
+            <p>Trazer esta filosofia ao setor financeiro não é uma tarefa fácil, especialmente quando se trata de atividades que geram receita. A própria B3 (bolsa brasileira) tem seus custos, além dos impostos que o governo já cobra quando o investidor tem lucro. Contudo acreditamos ser possível em um futuro um ecossistema financeiro colaborativo e livre através da tecnologia.</p>
+            <p>A nossa proposta neste projeto é dar o primeiro passo, mas também abrir portas para um mundo de serviços livres e colaborativos para o setor financeiro, sem custos e que possibilitem receita aos seus usuários.</p>
+            <p>Uma nova definição para o termo "Sharing Economy" (Economia Compartilhada) ou uma amplificação do mesmo. Apresentaremos um Radar de Ativos da B3 que traz de maneira simples as empresas com os melhores indicadores estatísticos do momento bem como alerta sobre empresas com alto potencial de baixa. Um produto como este (Radar Financeiro) certamente não seria oferecido gratuitamente por instituições financeiras.</p>
+            <p>Outra grande vantagem de se abrir o código fonte deste tipo de serviço é que o algorítimo compartilhado poderá ser constantemente melhorado pela comunidade desenvolvedora, tornando-o mais sensível ao mercado financeiro e sem custos de manutenção de software.</p>
         </div>
+   
+   
+   
+   
+   
     </section>
+    <div class="fundopreto">
+        <br><br><br><br>
+    <p class="lead textoBranco legenda"> GESTÃO  </p>
+    <p class="lead textoBranco legenda">DA TECNOLOGIA DA INFORMAÇÃO</p>
+    <p class="lead textoBranco legenda">HTML,CSS,JS,PHP</p>
+    
+
+    </div>
+    <div class="d1"></div>
 
     <!-- DEPOIMENTOS -->
     <section class="jumbotron text-center" style="background-color: white !important" id="depoimentos">
