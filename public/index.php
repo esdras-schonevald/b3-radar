@@ -12,11 +12,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0912c79bad.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
- 
+
     <nav class="corSecundaria navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand textoBranco" href="#">Radar de investimentos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,8 @@
     <section class=" text-center">
         <div class="container">
             <img class="foto-radar" src="imagens/radarazul.png" alt="">
-            
-        
+
+
             <h1 class="jumbotron-heading textoBranco">RADAR INVESTIMENTOS</h1>
                         <p class=" text-center">
                 <a href="#contato" class="btn btn-dark my-2">Contato</a>
@@ -68,8 +68,8 @@
                             <thead>
                             <tr>
                                 <td colspan="4" class="corCompraeVenda centralizar">COMPRA</td>
-                                
-                        
+
+
                             </tr>
 
                                 <tr>
@@ -77,18 +77,18 @@
                                         <td>P/L</td>
                                         <td>Marg.liq</td>
                                         <td>Div</td>
-                                       
-                    
+
+
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach (json_decode(file_get_contents("http://localhost:3002/"))->ativos as $ativo): ?>
+                                <?php foreach ((array)json_decode(file_get_contents("http://3.144.212.85:3004/get/10/buy")) as $ativo): ?>
                                     <tr>
-                                        <td><?= $ativo->Empresa; ?></td>
-                                        <td><?= $ativo->{'P/L'};//quando tiver / e etc chaves e aspas simples ?></td> 
-                                        <td><?= $ativo->{'Marg. Líquida'}; ?></td>
-                                        <td><?= $ativo->{'Div. Yield'}; ?></td>
-                                    </tr> 
+                                        <td><?= $ativo->tiker; ?></td>
+                                        <td><?= $ativo->pl;//quando tiver / e etc chaves e aspas simples ?></td>
+                                        <td><?= $ativo->margliquida; ?></td>
+                                        <td><?= $ativo->divyield; ?></td>
+                                    </tr>
                                     <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -98,39 +98,39 @@
                 <div class="card mb-4 box-shadow">
                         <table class="table">
                             <thead>
-                           
-                         
+
+
                             <tr>
                                 <td colspan="4" class="corCompraeVenda centralizar" >VENDA</td>
-                                
-                        
+
+
                             </tr>
 
-                          
-                            
-                            
+
+
+
                             <tr>
-                                        
+
                                         <td>Empresa</td>
                                         <td>P/L</td>
                                         <td>Marg.liq</td>
                                         <td>Div</td>
-                                       
-                
+
+
                                 </tr>
                             <tr>
 
                             </thead>
                             <tbody>
-                                <?php foreach (json_decode(file_get_contents("http://localhost:3002/"))->ativos as $ativo): ?>
-                                    
+                                <?php foreach ((array)json_decode(file_get_contents("http://3.144.212.85:3004/get/10/sell")) as $ativo): ?>
+
                                     <tr>
-                                    
-                                        <td><?= $ativo->Empresa; ?></td>
-                                        <td><?= $ativo->{'P/L'};//quando tiver / e etc chaves e aspas simples ?></td> 
-                                        <td><?= $ativo->{'Marg. Líquida'}; ?></td>
-                                        <td><?= $ativo->{'Div. Yield'}; ?></td>
-                                    </tr> 
+
+                                        <td><?= $ativo->tiker; ?></td>
+                                        <td><?= $ativo->pl;//quando tiver / e etc chaves e aspas simples ?></td>
+                                        <td><?= $ativo->margliquida; ?></td>
+                                        <td><?= $ativo->divyield; ?></td>
+                                    </tr>
                                     <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -141,8 +141,8 @@
     </div>
     <!-- SOBRE O PROJETO -->
     <section class="text-center jumbotron corPrimaria" id="sobre-projeto">
-    
- 
+
+
 </div>
     <div class="container">
             <h2 class="jumbotron-heading titulosBrancos">
@@ -158,18 +158,18 @@
             <p>Uma nova definição para o termo "Sharing Economy" (Economia Compartilhada) ou uma amplificação do mesmo. Apresentaremos um Radar de Ativos da B3 que traz de maneira simples as empresas com os melhores indicadores estatísticos do momento bem como alerta sobre empresas com alto potencial de baixa. Um produto como este (Radar Financeiro) certamente não seria oferecido gratuitamente por instituições financeiras.</p>
             <p>Outra grande vantagem de se abrir o código fonte deste tipo de serviço é que o algorítimo compartilhado poderá ser constantemente melhorado pela comunidade desenvolvedora, tornando-o mais sensível ao mercado financeiro e sem custos de manutenção de software.</p>
         </div>
-   
-   
-   
-   
-   
+
+
+
+
+
     </section>
     <div class="fundopreto">
         <br><br><br><br>
     <p class="lead textoBranco legenda"> GESTÃO  </p>
     <p class="lead textoBranco legenda">DA TECNOLOGIA DA INFORMAÇÃO</p>
     <p class="lead textoBranco legenda">HTML,CSS,JS,PHP</p>
-    
+
 
     </div>
     <div class="d1"></div>
@@ -215,6 +215,6 @@
     </script>
     <script src="assets/js/scripit.js">
     </script>
-    
+
 </body>
 </html>
